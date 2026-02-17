@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://getprescribed.org/sitemap.xml
+
+# Allow all search engine crawlers to access all content
+# Sitemap location for efficient crawling
