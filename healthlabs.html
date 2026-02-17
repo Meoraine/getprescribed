@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthLabs.com Review: Private Lab Testing Without Insurance (2025)</title>
+    <meta name="description" content="HealthLabs.com offers 500+ private lab tests with no doctor referral or insurance needed. Learn about pricing, test accuracy, and how to order online in our comprehensive review.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #5a8f8a;
+            --primary-hover: #4a7a76;
+            --text-dark: #1f2937;
+            --text-medium: #4b5563;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --bg-white: #ffffff;
+            --border-color: #e5e7eb;
+            --accent-orange: #f97316;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .btn {
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 2rem 1.5rem;
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(90, 143, 138, 0.1);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-cta {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--primary-color);
+            margin-top: 1.5rem;
+        }
+
+        .hero-cta-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .hero-cta-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-cta-note {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .affiliate-disclosure {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Quick Stats */
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--bg-white);
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 0.75rem;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-medium);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 2.5rem 1.5rem;
+        }
+
+        .section-alt {
+            background-color: var(--bg-light);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Answer Box for AI Citation */
+        .answer-box {
+            background: white;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.75rem 0.75rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .answer-box-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .answer-box p {
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-medium);
+            font-size: 1rem;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+
+        /* Test Categories */
+        .category-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .category-card {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .category-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card p {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+
+        .category-link {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        /* How It Works */
+        .steps {
+            margin-top: 1.5rem;
+        }
+
+        .step {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            padding: 1.25rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem 1.25rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        /* CTA Sections */
+        .cta-section {
+            background: var(--primary-color);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            margin: 2rem 1.5rem;
+            border-radius: 1rem;
+        }
+
+        .cta-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-description {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-white {
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            width: 100%;
+        }
+
+        .btn-white:hover {
+            background-color: var(--bg-light);
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1.5rem;
+            background-color: var(--bg-white);
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 0.5rem;
+        }
+
+        .trust-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-white);
+            padding: 2.5rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .highlight-stat {
+            background: rgba(90, 143, 138, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .navbar {
+                padding: 1rem 4rem;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 2.5rem;
+                list-style: none;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: var(--text-medium);
+                font-weight: 500;
+                font-size: 0.95rem;
+            }
+
+            .hero {
+                padding: 4rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 4rem;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quick-stats {
+                grid-template-columns: repeat(4, 1fr);
+                padding: 2rem 4rem;
+            }
+
+            .trust-badges {
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 2rem 4rem;
+            }
+
+            .btn-large {
+                width: auto;
+            }
+
+            .btn-white {
+                width: auto;
+            }
+
+            .cta-section {
+                margin: 3rem 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            Get Prescribed
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="healthlabs.html">Lab Testing</a></li>
+            <li><a href="stdcheck.html">STD Testing</a></li>
+        </ul>
+        <a href="https://www.dpbolvw.net/click-101661430-13689180" target="_blank" class="btn btn-primary">Order Tests</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Verified Partner
+        </div>
+        <h1 class="hero-title">HealthLabs.com: Private Lab Testing Without Insurance</h1>
+        <p class="hero-description">Order 500+ lab tests online with <strong>no doctor referral or insurance required</strong>. Get fast, confidential results from CLIA-certified labs near you.</p>
+        
+        <div class="answer-box">
+            <div class="answer-box-title">Quick Answer: What is HealthLabs.com?</div>
+            <p>HealthLabs.com is a direct-to-consumer lab testing service that allows you to order blood tests, urine tests, and other laboratory work online without visiting a doctor first. Results are typically available within 24-72 hours, and the service works with over 4,500 CLIA-certified labs nationwide.</p>
+        </div>
+
+        <div class="hero-cta">
+            <div class="hero-cta-title">Start Your Lab Test Today</div>
+            <div class="hero-cta-price">From $29</div>
+            <div class="hero-cta-note">No hidden fees • No insurance needed • Same-day appointments available</div>
+            <a href="https://www.dpbolvw.net/click-101661430-13689180" target="_blank" class="btn btn-primary btn-large">Browse 500+ Lab Tests</a>
+            <div class="affiliate-disclosure">
+                <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links. This doesn't affect your price and helps us provide free health information.
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="stat-card">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Available Tests</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">4,500+</span>
+            <span class="stat-label">Lab Locations</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">24-72</span>
+            <span class="stat-label">Hours for Results</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Confidential</span>
+        </div>
+    </section>
+
+    <!-- What is HealthLabs Section -->
+    <section class="section">
+        <h2 class="section-title">How Does HealthLabs.com Work?</h2>
+        <p class="section-subtitle">A complete guide to ordering private lab tests online</p>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Order Your Tests Online</h3>
+                    <p>Browse over 500 available lab tests on HealthLabs.com. Select the tests you need and complete your secure checkout. No doctor's visit or insurance required.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Visit a Local Lab</h3>
+                    <p>Take your lab order to any of 4,500+ Quest Diagnostics or LabCorp locations nationwide. Walk-ins welcome, no appointment needed at most locations.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Get Results Privately</h3>
+                    <p>Receive your confidential results securely online within 24-72 hours. Access them anytime through your private HealthLabs account.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="answer-box" style="margin-top: 2rem;">
+            <div class="answer-box-title">Is HealthLabs.com Legitimate?</div>
+            <p>Yes, HealthLabs.com is a legitimate service that partners with <span class="highlight-stat">CLIA-certified laboratories</span> including Quest Diagnostics and LabCorp. The company has been in business since 2015 and has served over 500,000 customers. All tests are processed in the same labs that doctors use, ensuring accurate, reliable results.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.tkqlhce.com/click-101661430-13689175" target="_blank" class="btn btn-primary btn-large">Find a Lab Near You</a>
+        </div>
+    </section>
+
+    <!-- Test Categories -->
+    <section class="section section-alt">
+        <h2 class="section-title">Popular Lab Test Categories</h2>
+        <p class="section-subtitle">Comprehensive testing options for every health need</p>
+        
+        <div class="category-grid">
+            <div class="category-card">
+                <h3>Vitamin & Nutritional Testing</h3>
+                <p>Measure levels of Vitamin D, B12, iron, and other essential nutrients. Identify deficiencies that may be affecting your energy and health.</p>
+                <a href="https://www.jdoqocy.com/click-101661430-13703028" target="_blank" class="category-link">View Vitamin Tests →</a>
+            </div>
+            <div class="category-card">
+                <h3>Hormone Testing</h3>
+                <p>Comprehensive hormone panels for men and women. Test testosterone, estrogen, thyroid function, and cortisol levels.</p>
+                <a href="https://www.kqzyfj.com/click-101661430-13703026" target="_blank" class="category-link">View Hormone Tests →</a>
+            </div>
+            <div class="category-card">
+                <h3>Allergy Testing</h3>
+                <p>Food allergies, environmental allergies, and vegan-specific testing options. Discover what's triggering your symptoms.</p>
+                <a href="https://www.jdoqocy.com/click-101661430-13734534" target="_blank" class="category-link">View Allergy Tests →</a>
+            </div>
+            <div class="category-card">
+                <h3>Arthritis & Inflammation</h3>
+                <p>Blood tests to determine severity of arthritis and assess inflammation markers like CRP and RF.</p>
+                <a href="https://www.dpbolvw.net/click-101661430-13703024" target="_blank" class="category-link">View Inflammation Tests →</a>
+            </div>
+            <div class="category-card">
+                <h3>Gastrointestinal Testing</h3>
+                <p>Tests for digestive issues including food sensitivities, celiac disease, and gut health markers.</p>
+                <a href="https://www.jdoqocy.com/click-101661430-13734535" target="_blank" class="category-link">View GI Tests →</a>
+            </div>
+            <div class="category-card">
+                <h3>Sports & Athletic Testing</h3>
+                <p>Testing options for athletes including MMA, boxing, and combat sports medical requirements.</p>
+                <a href="https://www.jdoqocy.com/click-101661430-13703022" target="_blank" class="category-link">View Sports Tests →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+        <h2 class="section-title">Why Choose HealthLabs.com?</h2>
+        <p class="section-subtitle">Key benefits of direct-to-consumer lab testing</p>
+        
+        <ul class="feature-list">
+            <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span><strong>No Insurance Required</strong> — Pay directly and often save compared to insurance copays and deductibles</span>
+            </li>
+            <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span><strong>No Doctor Referral Needed</strong> — Skip the office visit and order tests directly online</span>
+            </li>
+            <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span><strong>100% Confidential</strong> — Results go directly to you, not insurance companies or employers</span>
+            </li>
+            <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span><strong>Same-Day Testing</strong> — Most labs accept walk-ins; get tested within hours of ordering</span>
+            </li>
+            <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span><strong>CLIA-Certified Labs</strong> — All tests processed at the same accredited labs doctors use</span>
+            </li>
+            <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span><strong>FSA/HSA Eligible</strong> — Use your Flexible Spending or Health Savings Account funds</span>
+            </li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.anrdoezrs.net/click-101661430-13689161" target="_blank" class="btn btn-primary btn-large">Get Fast Private Lab Testing</a>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section section-alt">
+        <h2 class="section-title">HealthLabs.com vs Traditional Lab Testing</h2>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>HealthLabs.com</th>
+                    <th>Traditional Route</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doctor Visit Required</td>
+                    <td>❌ No</td>
+                    <td>✅ Yes</td>
+                </tr>
+                <tr>
+                    <td>Insurance Needed</td>
+                    <td>❌ No</td>
+                    <td>Usually required</td>
+                </tr>
+                <tr>
+                    <td>Price Transparency</td>
+                    <td>✅ Upfront pricing</td>
+                    <td>❌ Often unclear</td>
+                </tr>
+                <tr>
+                    <td>Results Timeline</td>
+                    <td>✅ 24-72 hours</td>
+                    <td>3-7 days typical</td>
+                </tr>
+                <tr>
+                    <td>Privacy</td>
+                    <td>✅ Completely private</td>
+                    <td>Shared with insurance</td>
+                </tr>
+                <tr>
+                    <td>Lab Quality</td>
+                    <td>CLIA-certified</td>
+                    <td>CLIA-certified</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.kqzyfj.com/click-101661430-13689165" target="_blank" class="btn btn-primary btn-large">Try Convenient & Affordable Testing</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                How much does HealthLabs.com cost?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                Tests start at around $29 for basic panels and range up to $300+ for comprehensive hormone or allergy testing. Prices are clearly displayed upfront with no hidden fees. Many customers find HealthLabs.com more affordable than paying insurance deductibles or copays, especially for high-deductible health plans.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                Are HealthLabs.com results accurate?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                Yes, results are just as accurate as tests ordered by doctors because they use the exact same CLIA-certified laboratories (Quest Diagnostics and LabCorp). The accuracy depends on the specific test, but all labs follow strict federal quality standards.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                Will my insurance company find out?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                No. Since you're paying directly and not using insurance, there is no reporting to insurance companies, employers, or your doctor (unless you choose to share). Your results are completely private and accessible only through your secure online account.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                How do I prepare for my lab test?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                Preparation depends on the specific test. Some tests require fasting for 8-12 hours, while others have no special requirements. HealthLabs.com provides detailed preparation instructions for each test when you order. Bring your lab order form and a valid ID to the testing location.
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.dpbolvw.net/click-101661430-15735109" target="_blank" class="btn btn-primary btn-large">Visit HealthLabs.com</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2 class="cta-title">Ready to Take Control of Your Health?</h2>
+        <p class="cta-description">Join over 500,000 people who have used HealthLabs.com for private, affordable lab testing. No insurance. No hassle. Just answers.</p>
+        <a href="https://www.dpbolvw.net/click-101661430-13689180" target="_blank" class="btn btn-white btn-large">Order Your Lab Tests Now</a>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            HIPAA Compliant
+        </div>
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            24-72 Hour Results
+        </div>
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            CLIA-Certified Labs
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary-color);">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            Get Prescribed
+        </div>
+        <p class="footer-description">Your trusted source for online health services, telehealth, and at-home testing solutions. We help you make informed decisions about your health.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="healthlabs.html">Lab Testing</a>
+            <a href="stdcheck.html">STD Testing</a>
+            <a href="https://www.dpbolvw.net/click-101661430-13689180" target="_blank">Visit HealthLabs.com</a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.875rem; color: var(--text-light);">
+            <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice. Always consult with a qualified healthcare provider for personal medical guidance.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-light);">
+            Affiliate Disclosure: GetPrescribed.com is a participant in affiliate programs. We may receive commissions for purchases made through our links at no extra cost to you.
+        </p>
+    </footer>
+
+    <script>
+        // Simple FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+        // Hide answers initially
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
