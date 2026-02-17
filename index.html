@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Prescribed - Your Health, From Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #5a8f8a;
+            --primary-hover: #4a7a76;
+            --text-dark: #1f2937;
+            --text-medium: #4b5563;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --bg-white: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 4rem;
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-medium);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-dark);
+        }
+
+        .btn {
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-light);
+        }
+
+        .btn-white {
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+        }
+
+        .btn-white:hover {
+            background-color: var(--bg-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 4rem;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 550px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 4rem;
+            background-color: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-medium);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border-color);
+            transition: box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #f0f9f8;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-description {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* Feature Section */
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            padding: 5rem 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-image {
+            flex: 1;
+            max-width: 550px;
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        .feature-content {
+            flex: 1;
+            max-width: 550px;
+        }
+
+        .feature-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-medium);
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 4rem;
+            background-color: var(--bg-white);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .trust-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-color);
+        }
+
+        /* CTA Section */
+        .cta {
+            background-color: var(--primary-color);
+            padding: 4rem;
+            margin: 4rem;
+            border-radius: 1rem;
+            text-align: center;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-description {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Locations Section */
+        .locations {
+            padding: 5rem 4rem;
+            background-color: var(--bg-light);
+        }
+
+        .locations-card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border-color);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .locations-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .pin-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--primary-color);
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .location-column h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .location-column ul {
+            list-style: none;
+        }
+
+        .location-column li {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-white);
+            padding: 4rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .footer-column h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--text-dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .locations-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 3rem 1.5rem;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.25rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .services {
+                padding: 3rem 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature {
+                flex-direction: column;
+                padding: 3rem 1.5rem;
+            }
+
+            .trust-badges {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: center;
+            }
+
+            .cta {
+                margin: 2rem 1.5rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .locations {
+                padding: 3rem 1.5rem;
+            }
+
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer {
+                padding: 3rem 1.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            Get Prescribed
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <a href="#" class="btn btn-primary">Get Started</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Your Health, From Home</h1>
+            <p class="hero-description">Access comprehensive telehealth services, at-home testing, and AI-powered health guidance. Quality healthcare has never been more convenient.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Browse Services</a>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Doctor providing telehealth consultation">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="section-header">
+            <h2 class="section-title">Comprehensive Healthcare Solutions</h2>
+            <p class="section-subtitle">Everything you need for modern healthcare, accessible from anywhere</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m12 14 4-4"/>
+                        <path d="M3.34 19a10 10 0 1 1 17.32 0"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">At-Home Testing</h3>
+                <p class="service-description">Comprehensive health testing kits delivered to your door with lab-certified results.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m22 8-6 4 6 4V8Z"/>
+                        <rect width="14" height="12" x="2" y="6" rx="2" ry="2"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Virtual Consultations</h3>
+                <p class="service-description">Connect with licensed healthcare providers from the comfort of your home.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 8V4H8"/>
+                        <rect width="16" height="12" x="4" y="8" rx="2"/>
+                        <path d="M2 14h2"/>
+                        <path d="M20 14h2"/>
+                        <path d="M15 13v2"/>
+                        <path d="M9 13v2"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">AI Health Assistant</h3>
+                <p class="service-description">Get instant answers to health questions with our advanced AI technology.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Prescription Services</h3>
+                <p class="service-description">Fast, convenient prescription management and delivery to your location.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- At-Home Testing Feature Section -->
+    <section class="feature">
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=800&h=600&fit=crop" alt="At-home COVID-19 test kit">
+        </div>
+        <div class="feature-content">
+            <h2 class="feature-title">At-Home Testing Made Simple</h2>
+            <p class="feature-description">Skip the clinic visits. Our comprehensive at-home testing kits cover everything from routine wellness screenings to specialized diagnostics. Get lab-certified results delivered securely to your device.</p>
+            <ul class="feature-list">
+                <li>
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    Easy-to-use test kits with clear instructions
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    Results reviewed by certified healthcare professionals
+                </li>
+                <li>
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6 9 17l-5-5"/>
+                    </svg>
+                    Follow-up consultations included with every test
+                </li>
+            </ul>
+            <a href="#" class="btn btn-primary">View All Tests</a>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>
+            Licensed Healthcare Professionals
+        </div>
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            Available 24/7
+        </div>
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            HIPAA Compliant & Secure
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2 class="cta-title">Ready to Get Started?</h2>
+        <p class="cta-description">Join thousands who trust Get Prescribed for their healthcare needs. Your first consultation is on us.</p>
+        <a href="#" class="btn btn-white">Start Your Journey</a>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations">
+        <div class="section-header">
+            <h2 class="section-title">Serving Communities Nationwide</h2>
+            <p class="section-subtitle">Find healthcare services tailored for your local area. We're proud to serve patients in major cities across the United States.</p>
+        </div>
+        <div class="locations-card">
+            <div class="locations-header">
+                <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Available Locations
+            </div>
+            <div class="locations-grid">
+                <div class="location-column">
+                    <h4>AZ</h4>
+                    <ul>
+                        <li>Phoenix, AZ</li>
+                        <li>Tucson, AZ</li>
+                        <li>Mesa, AZ</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">DC</h4>
+                    <ul>
+                        <li>Washington, DC</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">FL</h4>
+                    <ul>
+                        <li>Miami, FL</li>
+                        <li>Orlando, FL</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">GA</h4>
+                    <ul>
+                        <li>Atlanta, GA</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">IL</h4>
+                    <ul>
+                        <li>Chicago, IL</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">MA</h4>
+                    <ul>
+                        <li>Boston, MA</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">NY</h4>
+                    <ul>
+                        <li>New York, NY</li>
+                        <li>Buffalo, NY</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">PA</h4>
+                    <ul>
+                        <li>Philadelphia, PA</li>
+                        <li>Pittsburgh, PA</li>
+                    </ul>
+                </div>
+                <div class="location-column">
+                    <h4>CA</h4>
+                    <ul>
+                        <li>Los Angeles, CA</li>
+                        <li>San Diego, CA</li>
+                        <li>San Jose, CA</li>
+                        <li>San Francisco, CA</li>
+                        <li>Fresno, CA</li>
+                        <li>Sacramento, CA</li>
+                        <li>Long Beach, CA</li>
+                        <li>Oakland, CA</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">NC</h4>
+                    <ul>
+                        <li>Charlotte, NC</li>
+                        <li>Raleigh, NC</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">OH</h4>
+                    <ul>
+                        <li>Columbus, OH</li>
+                        <li>Cleveland, OH</li>
+                        <li>Cincinnati, OH</li>
+                    </ul>
+                </div>
+                <div class="location-column">
+                    <h4>CO</h4>
+                    <ul>
+                        <li>Denver, CO</li>
+                        <li>Colorado Springs, CO</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">MI</h4>
+                    <ul>
+                        <li>Detroit, MI</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">MN</h4>
+                    <ul>
+                        <li>Minneapolis, MN</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">NV</h4>
+                    <ul>
+                        <li>Las Vegas, NV</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">OR</h4>
+                    <ul>
+                        <li>Portland, OR</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">TX</h4>
+                    <ul>
+                        <li>Houston, TX</li>
+                        <li>San Antonio, TX</li>
+                        <li>Dallas, TX</li>
+                        <li>Austin, TX</li>
+                        <li>Fort Worth, TX</li>
+                        <li>El Paso, TX</li>
+                        <li>Arlington, TX</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">WA</h4>
+                    <ul>
+                        <li>Seattle, WA</li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">WI</h4>
+                    <ul>
+                        <li>Milwaukee, WI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    Get Prescribed
+                </div>
+                <p class="footer-description">Your trusted source for online health services, telehealth, and at-home testing solutions.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">At-Home Testing</a></li>
+                    <li><a href="#">Virtual Consultations</a></li>
+                    <li><a href="#">AI Health Assistant</a></li>
+                    <li><a href="#">Prescription Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Popular Locations</h4>
+                <ul>
+                    <li><a href="#">New York NY</a></li>
+                    <li><a href="#">Los Angeles CA</a></li>
+                    <li><a href="#">Chicago IL</a></li>
+                    <li><a href="#">Houston TX</a></li>
+                    <li><a href="#">Phoenix AZ</a></li>
+                    <li><a href="#">Philadelphia PA</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
