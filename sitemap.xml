@@ -33,6 +33,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://getprescribed.org/winona.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
   <!-- Blog Posts -->
   <url>
@@ -62,6 +68,12 @@
   <url>
     <loc>https://getprescribed.org/blog/medical-cannabis-card-online-15-minutes.html</loc>
     <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getprescribed.org/blog/menopause-hormone-therapy-online-guide.html</loc>
+    <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
