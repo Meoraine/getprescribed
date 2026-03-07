@@ -399,8 +399,20 @@
         /* Footer */
         .footer {
             background-color: var(--bg-white);
-            padding: 2.5rem 1.5rem;
+            padding: 4rem;
             border-top: 1px solid var(--border-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-brand {
+            max-width: 300px;
         }
 
         .footer-logo {
@@ -417,19 +429,32 @@
             font-size: 0.95rem;
             color: var(--text-medium);
             line-height: 1.6;
-            margin-bottom: 1.5rem;
         }
 
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+        .footer-column h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
         }
 
-        .footer-links a {
-            color: var(--text-medium);
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column a {
             text-decoration: none;
+            color: var(--text-medium);
             font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--text-dark);
         }
 
         /* Responsive */
@@ -776,27 +801,45 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary-color);">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-            </svg>
-            Get Prescribed
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    Get Prescribed
+                </div>
+                <p class="footer-description">Your trusted source for online health services, telehealth, and at-home testing solutions.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="../jasemedical.html">Ivermectin and Mebendazole</a></li>
+                    <li><a href="../enhance-md.html">Weightloss Treatment</a></li>
+                    <li><a href="../winona.html">Menopause Treatment</a></li>
+                    <li><a href="../nuggmd.html">Cannabis Card</a></li>
+                    <li><a href="../healthlabs.html">Lab Testing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="ivermectin-mebendazole-uses-research-guide.html">Ivermectin & Mebendazole Guide</a></li>
+                    <li><a href="vitamin-deficiency-testing-guide.html">Vitamin Testing Guide</a></li>
+                    <li><a href="std-testing-window-period-guide.html">STD Window Periods</a></li>
+                    <li><a href="menopause-hormone-therapy-online-guide.html">Menopause Guide</a></li>
+                    <li><a href="../stdcheck.html">STD Testing</a></li>
+                </ul>
+            </div>
         </div>
-        <p class="footer-description">Your trusted source for online health services, telehealth, and specialized menopause care. We help women make informed decisions about their hormonal health.</p>
-        <div class="footer-links">
-            <a href="../index.html">Home</a>
-            <a href="../healthlabs.html">Lab Testing</a>
-            <a href="../stdcheck.html">STD Testing</a>
-            <a href="../enhance-md.html">Weight Loss</a>
-            <a href="../nuggmd.html">Medical Card</a>
-            <a href="../winona.html">Menopause Care</a>
+        <div style="max-width: 1400px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+            <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: 1rem;">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice. Always consult with a qualified healthcare provider for personal medical guidance.
+            </p>
+            <p style="font-size: 0.75rem; color: var(--text-light);">
+                <strong>Affiliate Disclosure:</strong> GetPrescribed.com is a participant in affiliate programs. We may receive commissions for purchases made through our links at no extra cost to you.
+            </p>
         </div>
-        <p style="margin-top: 2rem; font-size: 0.875rem; color: var(--text-light);">
-            <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice. Always consult with a qualified healthcare provider for personal medical guidance.
-        </p>
-        <p style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-light);">
-            Affiliate Disclosure: GetPrescribed.com is a participant in affiliate programs. We may receive commissions for purchases made through our links at no extra cost to you.
-        </p>
     </footer>
 
     <script>
