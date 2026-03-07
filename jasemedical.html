@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NuggMD Review: Medical Cannabis Cards Online in 15 Minutes (2025)</title>
-    <meta name="description" content="Get your medical marijuana card online with NuggMD. Licensed doctors, same-day approval, and access to dispensaries in 30+ states. Learn about the process, pricing, and legitimacy.">
+    <title>Jase Medical Review: Ivermectin & Mebendazole Online Consultation (2025)</title>
+    <meta name="description" content="Jase Medical provides online consultations for Ivermectin, Mebendazole, and other antiparasitic medications. Paper-based consultation, no video call required. Learn pricing and process.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,8 @@
             --bg-light: #f9fafb;
             --bg-white: #ffffff;
             --border-color: #e5e7eb;
-            --accent-green: #22c55e;
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
         }
 
         body {
@@ -262,23 +263,55 @@
             margin-top: 0.125rem;
         }
 
-        /* State Cards */
-        .state-grid {
+        /* Product Cards */
+        .product-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
+            grid-template-columns: 1fr;
+            gap: 1rem;
             margin-top: 1.5rem;
         }
 
-        .state-card {
+        .product-card {
             background: white;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
             border: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 0.875rem;
-            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
             color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+
+        .product-link {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: rgba(90, 143, 138, 0.1);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
         }
 
         /* How It Works */
@@ -434,6 +467,30 @@
             color: var(--primary-color);
         }
 
+        /* Warning Box */
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid var(--accent-amber);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.75rem 0.75rem 0;
+        }
+
+        .warning-box-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .warning-box p {
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
         /* Footer */
         .footer {
             background-color: var(--bg-white);
@@ -509,8 +566,8 @@
                 padding: 4rem;
             }
 
-            .state-grid {
-                grid-template-columns: repeat(4, 1fr);
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .quick-stats {
@@ -555,7 +612,7 @@
             <li><a href="nuggmd.html">Online Cannabis Card</a></li>
             <li><a href="healthlabs.html">Online Lab Testing</a></li>
         </ul>
-        <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary">Get Your Card</a>
+        <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-primary">Get Consultation</a>
     </nav>
 
     <!-- Hero Section -->
@@ -564,21 +621,33 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 6L9 17l-5-5"/>
             </svg>
-            Verified Partner
+            Featured Partner
         </div>
-        <h1 class="hero-title">NuggMD: Medical Cannabis Cards Online in 15 Minutes</h1>
-        <p class="hero-description">Connect with licensed marijuana doctors for <strong>same-day medical card approval</strong>. Valid in 30+ states with access to thousands of dispensaries. 100% online, no appointment needed.</p>
+        <h1 class="hero-title">Jase Medical: Ivermectin & Mebendazole Online Consultation</h1>
+        <p class="hero-description">Get <strong>Ivermectin, Mebendazole, and other antiparasitic medications</strong> through a simple paper-based consultation process. No video call required—just complete the online health questionnaire and a licensed physician reviews your request.</p>
         
         <div class="answer-box">
-            <div class="answer-box-title">Quick Answer: What is NuggMD?</div>
-            <p>NuggMD is a telehealth platform connecting patients with licensed cannabis doctors for medical marijuana evaluations. The service operates in over 30 states, offering same-day video consultations and digital medical card approvals. Most patients receive their recommendations within 15-30 minutes of starting the online process.</p>
+            <div class="answer-box-title">Quick Answer: How Does Jase Medical Work?</div>
+            <p>Jase Medical provides a streamlined consultation process for antiparasitic medications. Complete an online health questionnaire, a licensed physician reviews your medical information (paper-based, no video call), and if approved, your medication ships directly to your door. The entire process prioritizes privacy and convenience while maintaining medical oversight.</p>
+        </div>
+
+        <div class="warning-box">
+            <div class="warning-box-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                    <line x1="12" y1="9" x2="12" y2="13"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+                Important Medical Notice
+            </div>
+            <p>Medications like Ivermectin and Mebendazole are indicated for parasitic infections. While these compounds have been studied for various other conditions including COVID-19 and certain cancers, prescriptions are authorized only for their FDA-approved indication: treatment and prevention of parasitic infections. Patients must follow the proper consultation process for parasitic concerns.</p>
         </div>
 
         <div class="hero-cta">
-            <div class="hero-cta-title">Get Your Medical Card Today</div>
-            <div class="hero-cta-price">From $39</div>
-            <div class="hero-cta-note">Same-day approval • 30+ states • Money-back guarantee</div>
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Start Your Evaluation</a>
+            <div class="hero-cta-title">Start Your Consultation</div>
+            <div class="hero-cta-price">Consultation + Medication</div>
+            <div class="hero-cta-note">Paper-based review • No video call required • Discreet shipping • Licensed physicians</div>
+            <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-primary btn-large">Begin Consultation</a>
             <div class="affiliate-disclosure">
                 <strong>Affiliate Disclosure:</strong> We may earn a commission if you purchase through our links. This doesn't affect your price and helps us provide free health information.
             </div>
@@ -588,283 +657,263 @@
     <!-- Quick Stats -->
     <section class="quick-stats">
         <div class="stat-card">
-            <span class="stat-number">30+</span>
-            <span class="stat-label">States Served</span>
-        </div>
-        <div class="stat-card">
-            <span class="stat-number">1M+</span>
-            <span class="stat-label">Patients Helped</span>
-        </div>
-        <div class="stat-card">
-            <span class="stat-number">15 min</span>
-            <span class="stat-label">Average Process Time</span>
-        </div>
-        <div class="stat-card">
             <span class="stat-number">100%</span>
             <span class="stat-label">Online Process</span>
         </div>
+        <div class="stat-card">
+            <span class="stat-number">Paper</span>
+            <span class="stat-label">Based Review</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">US-Licensed</span>
+            <span class="stat-label">Physicians</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">Discreet</span>
+            <span class="stat-label">Shipping</span>
+        </div>
     </section>
 
-    <!-- What is NuggMD Section -->
+    <!-- What is Jase Medical Section -->
     <section class="section">
-        <h2 class="section-title">How Does NuggMD Work?</h2>
-        <p class="section-subtitle">Three simple steps to your medical marijuana card</p>
+        <h2 class="section-title">How Does Jase Medical Work?</h2>
+        <p class="section-subtitle">A simple consultation process for antiparasitic medications</p>
         
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>Complete Online Intake</h3>
-                    <p>Fill out a brief medical questionnaire about your condition and health history. Takes approximately 5 minutes. No documentation required upfront.</p>
+                    <h3>Select Your Medication</h3>
+                    <p>Choose from available antiparasitic medications including Ivermectin, Mebendazole, and combination kits. Select the quantity and formulation that meets your needs.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>Video Consultation</h3>
-                    <p>Connect with a licensed cannabis doctor via secure video chat. Discuss your symptoms and learn how medical cannabis may help. Most consultations last 10-15 minutes.</p>
+                    <h3>Complete Health Questionnaire</h3>
+                    <p>Fill out a comprehensive online health assessment. No video consultation required—this is a paper-based review process where a licensed physician evaluates your medical information.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>Receive Your Recommendation</h3>
-                    <p>If approved, receive your digital medical cannabis recommendation immediately. Physical card arrives by mail within 3-5 business days. Access dispensaries same day in most states.</p>
+                    <h3>Physician Review & Approval</h3>
+                    <p>A licensed US physician reviews your questionnaire to determine if treatment is appropriate. Telehealth meetings are available upon request, but the standard process uses paper-based consultation.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Discreet Home Delivery</h3>
+                    <p>If approved, your medication ships directly to your door in plain, unmarked packaging. Most orders arrive within 3-5 business days.</p>
                 </div>
             </div>
         </div>
 
         <div class="answer-box" style="margin-top: 2rem;">
-            <div class="answer-box-title">Is NuggMD Legitimate?</div>
-            <p>Yes, NuggMD operates through <span class="highlight-stat">state-licensed physicians</span> who are authorized to recommend medical cannabis in their respective states. The platform has facilitated over 1 million patient evaluations since 2015. All doctors are board-certified and knowledgeable about cannabis therapeutics. The service complies with HIPAA regulations and state medical cannabis laws.</p>
+            <div class="answer-box-title">Is Jase Medical Legitimate?</div>
+            <p>Yes, Jase Medical operates through <span class="highlight-stat">licensed US physicians</span> and accredited pharmacies. They provide physician-supervised consultations for antiparasitic medications. The paper-based consultation model removes friction while maintaining proper medical oversight. All medications are sourced from licensed US pharmacies following strict quality standards.</p>
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Start Your Application</a>
+            <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-primary btn-large">Start Your Consultation</a>
         </div>
     </section>
 
-    <!-- Available States -->
+    <!-- Product Categories -->
     <section class="section section-alt">
-        <h2 class="section-title">Available States</h2>
-        <p class="section-subtitle">NuggMD provides medical cannabis evaluations in 30+ states</p>
+        <h2 class="section-title">Available Medications</h2>
+        <p class="section-subtitle">Antiparasitic treatments available through consultation</p>
         
-        <div class="state-grid">
-            <div class="state-card">California</div>
-            <div class="state-card">New York</div>
-            <div class="state-card">Florida</div>
-            <div class="state-card">Texas</div>
-            <div class="state-card">Arizona</div>
-            <div class="state-card">Nevada</div>
-            <div class="state-card">Illinois</div>
-            <div class="state-card">Michigan</div>
-            <div class="state-card">Ohio</div>
-            <div class="state-card">Pennsylvania</div>
-            <div class="state-card">New Jersey</div>
-            <div class="state-card">Maryland</div>
-            <div class="state-card">Virginia</div>
-            <div class="state-card">Missouri</div>
-            <div class="state-card">Oklahoma</div>
-            <div class="state-card">And more...</div>
-        </div>
-
-        <p style="text-align: center; margin-top: 1.5rem; color: var(--text-medium); font-size: 0.95rem;">Full list available during application process. State availability subject to local regulations.</p>
-
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Check Your State</a>
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="product-tag">Antiparasitic</span>
+                <h3>Ivermectin</h3>
+                <p>Broad-spectrum antiparasitic effective against various parasitic infections. Available in different formulations and quantities based on individual needs.</p>
+                <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="product-link">Learn More →</a>
+            </div>
+            <div class="product-card">
+                <span class="product-tag">Antiparasitic</span>
+                <h3>Mebendazole</h3>
+                <p>Effective treatment for intestinal parasites including pinworm, roundworm, and hookworm. Available as single or multiple-dose packages.</p>
+                <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="product-link">Learn More →</a>
+            </div>
+            <div class="product-card">
+                <span class="product-tag">Combination</span>
+                <h3>Parasite Treatment Kits</h3>
+                <p>Comprehensive kits containing multiple antiparasitic medications for broad-spectrum protection and treatment options.</p>
+                <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="product-link">Learn More →</a>
+            </div>
+            <div class="product-card">
+                <span class="product-tag">Preventive</span>
+                <h3>Travel Protection</h3>
+                <p>Pre-travel consultation and medication for those visiting areas with higher parasite risk. Proactive protection for international travelers.</p>
+                <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="product-link">Learn More →</a>
+            </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
     <section class="section">
-        <h2 class="section-title">Why Choose NuggMD?</h2>
-        <p class="section-subtitle">Benefits of getting your medical card online</p>
+        <h2 class="section-title">Why Choose Jase Medical?</h2>
+        <p class="section-subtitle">Key benefits of the paper-based consultation model</p>
         
         <ul class="feature-list">
             <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span><strong>Same-Day Approval</strong> — Most patients receive their recommendation within 15-30 minutes of starting the process</span>
+                <span><strong>No Video Call Required</strong> — Complete the consultation through a paper-based questionnaire review process</span>
             </li>
             <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span><strong>No Appointment Needed</strong> — Connect with a doctor whenever it's convenient for you, no scheduling required</span>
+                <span><strong>Fast Turnaround</strong> — Physician review typically completed within 24-48 hours</span>
             </li>
             <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span><strong>Money-Back Guarantee</strong> — If you're not approved, you don't pay. Risk-free evaluation process</span>
+                <span><strong>Maximum Privacy</strong> — No video meetings, discreet packaging, confidential process</span>
             </li>
             <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span><strong>HIPAA Compliant</strong> — Your medical information is protected with bank-level security</span>
+                <span><strong>Licensed Physicians</strong> — All consultations reviewed by US-licensed medical doctors</span>
             </li>
             <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span><strong>Dispensary Access</strong> — Get recommendations for top-rated dispensaries in your area</span>
+                <span><strong>Convenient Access</strong> — Skip the traditional doctor's office visit and pharmacy lines</span>
             </li>
             <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"/>
                 </svg>
-                <span><strong>Renewal Reminders</strong> — Never let your card expire with automatic renewal notifications</span>
+                <span><strong>Telehealth Option Available</strong> — Video consultation available upon request if preferred</span>
             </li>
         </ul>
 
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Get Started Now</a>
+            <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-primary btn-large">Explore Treatment Options</a>
         </div>
     </section>
 
     <!-- Comparison Table -->
     <section class="section section-alt">
-        <h2 class="section-title">NuggMD vs Traditional Clinics</h2>
+        <h2 class="section-title">Jase Medical vs Traditional Healthcare</h2>
         
         <table class="comparison-table">
             <thead>
                 <tr>
                     <th>Feature</th>
-                    <th>NuggMD</th>
-                    <th>Traditional Clinics</th>
+                    <th>Jase Medical</th>
+                    <th>Traditional Route</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Process Time</td>
-                    <td>✅ 15-30 minutes</td>
-                    <td>Days to weeks</td>
-                </tr>
-                <tr>
                     <td>Doctor Visit Required</td>
+                    <td>❌ No (paper-based)</td>
+                    <td>✅ Yes, in-person</td>
+                </tr>
+                <tr>
+                    <td>Video Call Required</td>
+                    <td>❌ No (optional)</td>
+                    <td>Sometimes</td>
+                </tr>
+                <tr>
+                    <td>Consultation Time</td>
+                    <td>✅ 24-48 hours</td>
+                    <td>Weeks for appointments</td>
+                </tr>
+                <tr>
+                    <td>Privacy Level</td>
+                    <td>✅ Maximum discretion</td>
+                    <td>Standard medical records</td>
+                </tr>
+                <tr>
+                    <td>Process Convenience</td>
                     <td>✅ 100% online</td>
-                    <td>❌ In-person required</td>
+                    <td>Multiple visits required</td>
                 </tr>
                 <tr>
-                    <td>Appointment Scheduling</td>
-                    <td>✅ None needed</td>
-                    <td>Required</td>
-                </tr>
-                <tr>
-                    <td>Cost</td>
-                    <td>✅ $39-199</td>
-                    <td>$100-300+</td>
-                </tr>
-                <tr>
-                    <td>Availability</td>
-                    <td>✅ 7 days a week</td>
-                    <td>Business hours only</td>
-                </tr>
-                <tr>
-                    <td>Money-Back Guarantee</td>
-                    <td>✅ Yes</td>
-                    <td>Rarely offered</td>
+                    <td>Physician Oversight</td>
+                    <td>✅ Licensed MD review</td>
+                    <td>✅ Licensed MD</td>
                 </tr>
             </tbody>
         </table>
 
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Try NuggMD Risk-Free</a>
-        </div>
-    </section>
-
-    <!-- Qualifying Conditions -->
-    <section class="section">
-        <h2 class="section-title">Qualifying Medical Conditions</h2>
-        <p class="section-subtitle">Common conditions that may qualify for medical cannabis</p>
-        
-        <p style="color: var(--text-medium); line-height: 1.8; margin-bottom: 1.5rem;">Qualifying conditions vary by state, but commonly include:</p>
-        
-        <ul class="feature-list">
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Chronic pain and inflammation</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Anxiety and PTSD</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Insomnia and sleep disorders</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Arthritis and joint pain</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Migraines and headaches</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Nausea and appetite loss</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Epilepsy and seizures</span>
-            </li>
-            <li>
-                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 6L9 17l-5-5"/>
-                </svg>
-                <span>Multiple sclerosis</span>
-            </li>
-        </ul>
-
-        <p style="color: var(--text-medium); font-size: 0.95rem; margin-top: 1.5rem;">Not sure if you qualify? The doctors at NuggMD can evaluate your specific situation and guide you through the process.</p>
-
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Check Your Eligibility</a>
+            <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-primary btn-large">Get Started with Jase Medical</a>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="section section-alt">
+    <section class="section">
         <h2 class="section-title">Frequently Asked Questions</h2>
         
         <div class="faq-item">
             <div class="faq-question">
-                How long does the medical card last?
+                Do I need a video consultation?
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="m19 9-7 7-7-7"/>
                 </svg>
             </div>
             <div class="faq-answer">
-                Medical cannabis recommendations typically last 1 year, though this varies by state (some are 6 months, others up to 2 years). NuggMD sends renewal reminders before expiration to ensure continuous access. Renewal evaluations are typically faster than initial applications since you're already in the system.
+                No, Jase Medical uses a paper-based consultation process. You complete an online health questionnaire, and a licensed physician reviews your medical information without requiring a video call. However, if you prefer a telehealth meeting, that option is available upon request.
             </div>
         </div>
 
         <div class="faq-item">
             <div class="faq-question">
-                Can I use my medical card in other states?
+                What medications are available through Jase Medical?
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="m19 9-7 7-7-7"/>
                 </svg>
             </div>
             <div class="faq-answer">
-                Some states offer reciprocity, meaning they accept out-of-state medical cards. However, this varies significantly by state. Nevada, Arizona, and Maine are examples of states with reciprocity programs. Always check local laws before traveling with cannabis products. NuggMD can provide state-specific guidance during your consultation.
+                Jase Medical provides consultations for antiparasitic medications including Ivermectin, Mebendazole, and combination treatment kits. These medications are prescribed for their FDA-approved indication: treatment and prevention of parasitic infections. A licensed physician determines which medication, if any, is appropriate based on your health questionnaire.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                How long does the consultation process take?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                The health questionnaire takes about 10-15 minutes to complete. Physician review typically occurs within 24-48 hours. Once approved, medications ship within 1-2 business days and usually arrive within 3-5 business days depending on your location.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                Is my information kept private?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                Yes, Jase Medical prioritizes patient privacy. The paper-based consultation eliminates the need for video calls. All medical information is handled according to HIPAA regulations. Medications are shipped in plain, unmarked packaging with no indication of contents.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                Can I get these medications for conditions other than parasites?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m19 9-7 7-7-7"/>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                Prescriptions are authorized only for the FDA-approved indication: treatment and prevention of parasitic infections. While compounds like Ivermectin and Mebendazole have been studied for various other conditions, physicians can only prescribe them for their indicated use. Patients must follow the proper consultation process for parasitic concerns.
             </div>
         </div>
 
@@ -876,44 +925,20 @@
                 </svg>
             </div>
             <div class="faq-answer">
-                NuggMD offers a money-back guarantee. If the doctor determines you don't qualify for medical cannabis, you won't be charged for the evaluation. This makes the process completely risk-free. The doctors are knowledgeable about qualifying conditions and will provide honest assessments.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                Will this show up on a background check?
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="m19 9-7 7-7-7"/>
-                </svg>
-            </div>
-            <div class="faq-answer">
-                Medical cannabis recommendations are protected health information under HIPAA. They do not appear on standard background checks or employment screenings. However, certain federal positions or jobs requiring security clearances may have different requirements. The recommendation is confidential between you, your doctor, and the state medical cannabis program.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                Can I get a card without a serious medical condition?
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="m19 9-7 7-7-7"/>
-                </svg>
-            </div>
-            <div class="faq-answer">
-                Qualifying conditions vary by state. Some states have broad definitions that include chronic pain, anxiety, or insomnia—conditions many people experience. The doctors at NuggMD will evaluate your specific symptoms and medical history to determine if you qualify under your state's regulations. It's worth consulting even if you're unsure about eligibility.
+                If the reviewing physician determines that treatment is not appropriate for your situation, you will be notified and any consultation fees will be refunded. The physician may provide guidance on alternative next steps or recommend seeing an in-person healthcare provider.
             </div>
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary btn-large">Get Your Medical Card</a>
+            <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-primary btn-large">Visit Jase Medical</a>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <h2 class="cta-title">Ready to Get Your Medical Cannabis Card?</h2>
-        <p class="cta-description">Join over 1 million patients who have used NuggMD for fast, affordable medical marijuana evaluations. Start your 15-minute consultation today.</p>
-        <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-white btn-large">Start Now - Risk Free</a>
+        <h2 class="cta-title">Ready to Get Started?</h2>
+        <p class="cta-description">Access licensed physician consultation for antiparasitic medications through Jase Medical's streamlined paper-based process. No video call required.</p>
+        <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank" class="btn btn-white btn-large">Begin Consultation Now</a>
     </section>
 
     <!-- Trust Badges -->
@@ -922,20 +947,20 @@
             <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
-            HIPAA Compliant
-        </div>
-        <div class="trust-badge">
-            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-            </svg>
-            Same-Day Approval
+            Licensed US Physicians
         </div>
         <div class="trust-badge">
             <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 6L9 17l-5-5"/>
             </svg>
-            Licensed Doctors
+            HIPAA Compliant
+        </div>
+        <div class="trust-badge">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            Discreet Shipping
         </div>
     </section>
 
@@ -947,18 +972,18 @@
             </svg>
             Get Prescribed
         </div>
-        <p class="footer-description">Your trusted source for online health services, telehealth, and medical cannabis card evaluations. We help you make informed decisions about your health.</p>
+        <p class="footer-description">Your trusted source for online health services, telehealth, and at-home testing solutions. We help you make informed decisions about your health.</p>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="jasemedical.html">Parasite Treatment</a>
-            <a href="healthlabs.html">Lab Testing</a>
-            <a href="stdcheck.html">STD Testing</a>
             <a href="enhance-md.html">Weight Loss</a>
             <a href="winona.html">Menopause Care</a>
-            <a href="https://www.nuggmd.com" target="_blank">Visit NuggMD</a>
+            <a href="nuggmd.html">Medical Cannabis Card</a>
+            <a href="healthlabs.html">Lab Testing</a>
+            <a href="https://rstr.co/jasemedical/getprescribed/v3g" target="_blank">Visit Jase Medical</a>
         </div>
         <p style="margin-top: 2rem; font-size: 0.875rem; color: var(--text-light);">
-            <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice. Cannabis laws vary by state. Always consult with a qualified healthcare provider and understand your local laws before using medical cannabis.
+            <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice. Antiparasitic medications require physician supervision and may not be suitable for everyone. Always consult with a qualified healthcare provider before starting any treatment. Prescriptions are authorized only for FDA-approved indications.
         </p>
         <p style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-light);">
             Affiliate Disclosure: GetPrescribed.com is a participant in affiliate programs. We may receive commissions for purchases made through our links at no extra cost to you.
