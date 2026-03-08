@@ -503,6 +503,93 @@
             color: var(--primary-color);
         }
 
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .mobile-menu-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80%;
+            max-width: 300px;
+            height: 100vh;
+            background: var(--bg-white);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 2rem 1.5rem;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        .mobile-menu-close {
+            align-self: flex-end;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .mobile-menu-close svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .mobile-menu-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .mobile-menu-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: block;
+        }
+
+        /* Prevent horizontal scroll on mobile */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
         /* Responsive */
         @media (min-width: 768px) {
             .navbar {
@@ -520,6 +607,10 @@
                 color: var(--text-medium);
                 font-weight: 500;
                 font-size: 0.95rem;
+            }
+
+            .mobile-menu-btn {
+                display: none;
             }
 
             .hero {
@@ -579,8 +670,62 @@
             <li><a href="nuggmd.html">Cannabis Card</a></li>
             <li><a href="healthlabs.html">Lab Testing</a></li>
         </ul>
-        <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary">Get Your Card</a>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary">Get Your Card</a>
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="mobile-menu-links">
+            <li><a href="jasemedical.html">Ivermectin and Mebendazole</a></li>
+            <li><a href="enhance-md.html">Weightloss Treatment</a></li>
+            <li><a href="winona.html">Menopause Treatment</a></li>
+            <li><a href="nuggmd.html">Cannabis Card</a></li>
+            <li><a href="healthlabs.html">Lab Testing</a></li>
+        </ul>
+        <a href="https://track.revoffers.com/aff_c?offer_id=283&aff_id=11679" target="_blank" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Get Your Card</a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const closeBtn = document.querySelector('.mobile-menu-close');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+
+            function openMenu() {
+                mobileMenu.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            menuBtn.addEventListener('click', openMenu);
+            closeBtn.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+        });
+    </script>
 
     <!-- Hero Section -->
     <section class="hero">
