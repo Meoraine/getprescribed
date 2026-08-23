@@ -634,6 +634,40 @@
             display: block;
         }
 
+        /* Hero Banner - Above the Fold */
+        .hero-banner {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4a7a76 100%);
+            color: white;
+            padding: 1.25rem 1.5rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .hero-banner-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-banner-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 768px) {
+            .hero-banner {
+                padding: 1.25rem 4rem;
+                font-size: 1.1rem;
+            }
+        }
+
         .mobile-menu-close {
             align-self: flex-end;
             background: none;
@@ -807,6 +841,17 @@
             overlay.addEventListener('click', closeMenu);
         });
     </script>
+
+    <!-- Hero Banner - Above the Fold -->
+    <div class="hero-banner">
+        <div class="hero-banner-content">
+            <svg class="hero-banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span>Answer a few online questions. A licensed provider reviews your request virtually and your prescription is shipped securely and discreetly.</span>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
