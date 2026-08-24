@@ -687,6 +687,81 @@
             }
         }
     </style>
+
+<!-- Schema Markup: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Get Prescribed",
+  "url": "https://getprescribed.org",
+  "logo": "https://getprescribed.org/logo.png",
+  "description": "Your trusted source for online health services, telehealth consultations, and at-home testing solutions."
+}
+</script>
+
+<!-- Schema Markup: MedicalWebPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "NuggMD: Medical Cannabis Cards Online in 15 Minutes",
+  "description": "Connect with licensed marijuana doctors for same-day medical card approval. Valid in 30+ states with access to thousands of dispensaries.",
+  "url": "https://getprescribed.org/nuggmd.html",
+  "lastReviewed": "2026-08-23",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Medical Cannabis Consultation"
+  },
+  "audience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Patient"
+  }
+}
+</script>
+
+<!-- Schema Markup: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "NuggMD Medical Cannabis Card Service",
+  "description": "Online medical marijuana evaluations with licensed doctors. Same-day approval in 30+ states.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Get Prescribed"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "Medical Cannabis Card Consultation",
+  "offers": {
+    "@type": "Offer",
+    "description": "Online medical marijuana card evaluation and approval"
+  }
+}
+</script>
+
+<!-- Schema Markup: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://getprescribed.org"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "NuggMD - Medical Cannabis Card",
+    "item": "https://getprescribed.org/nuggmd.html"
+  }]
+}
+</script>
+
 </head>
 <body>
     <!-- Navigation -->

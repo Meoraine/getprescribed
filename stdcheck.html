@@ -749,6 +749,81 @@
             }
         }
     </style>
+
+<!-- Schema Markup: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Get Prescribed",
+  "url": "https://getprescribed.org",
+  "logo": "https://getprescribed.org/logo.png",
+  "description": "Your trusted source for online health services, telehealth consultations, and at-home testing solutions."
+}
+</script>
+
+<!-- Schema Markup: MedicalWebPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Private STD Testing: Confidential, Fast & Affordable",
+  "description": "Get tested for STDs at 4,500+ locations nationwide. No insurance required. Results in 1-2 days. 100% confidential.",
+  "url": "https://getprescribed.org/stdcheck.html",
+  "lastReviewed": "2026-08-23",
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "STD Testing"
+  },
+  "audience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Patient"
+  }
+}
+</script>
+
+<!-- Schema Markup: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "STDCheck Private STD Testing",
+  "description": "Confidential STD testing at 4,500+ locations nationwide. Results in 1-2 days. No insurance needed.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Get Prescribed"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "STD Testing Service",
+  "offers": {
+    "@type": "Offer",
+    "description": "Private and confidential STD testing"
+  }
+}
+</script>
+
+<!-- Schema Markup: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://getprescribed.org"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "STDCheck - Private STD Testing",
+    "item": "https://getprescribed.org/stdcheck.html"
+  }]
+}
+</script>
+
 </head>
 <body>
     <!-- Navigation -->
