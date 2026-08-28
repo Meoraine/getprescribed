@@ -459,6 +459,78 @@
             .btn-large, .btn-white {
                 width: auto;
             }
+
+            .footer {
+                padding: 4rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 3rem;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-white);
+            padding: 2.5rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--text-dark);
         }
     </style>
 
@@ -862,6 +934,52 @@
             answer.style.display = 'none';
         });
     </script>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    Get Prescribed
+                </div>
+                <p class="footer-description">Your trusted source for online health services, telehealth, and at-home testing solutions.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Telehealth Services</h4>
+                <ul>
+                    <li><a href="../jasemedical.html">Ivermectin</a></li>
+                    <li><a href="../jasemedical.html">Mebendazole</a></li>
+                    <li><a href="../enhance-md.html">Semaglutide</a></li>
+                    <li><a href="../telos-rx.html">Tirzepatide</a></li>
+                    <li><a href="../winona.html">Estrogen</a></li>
+                    <li><a href="../healthlabs.html">At-Home Lab Testing</a></li>
+                    <li><a href="../stdcheck.html">Discreet STD Testing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="ivermectin-mebendazole-uses-research-guide.html">Ivermectin & Mebendazole Guide</a></li>
+                    <li><a href="repurposed-drugs-cancer-research-ivermectin-mebendazole.html">Antiparasitic Medications Guide</a></li>
+                    <li><a href="glp1-weight-loss-medication-guide.html">Weight Loss Medication Guide</a></li>
+                    <li><a href="nad-plus-longevity-therapy-guide.html">NAD+ Therapy Guide</a></li>
+                    <li><a href="menopause-hormone-therapy-online-guide.html">Menopause Treatment Guide</a></li>
+                    <li><a href="vitamin-deficiency-testing-guide.html">At-Home Testing Guide</a></li>
+                    <li><a href="std-testing-window-period-guide.html">STD Testing Guide</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="max-width: 1400px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+            <p style="font-size: 0.875rem; color: var(--text-light); margin-bottom: 1rem;">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice. Always consult with a qualified healthcare provider for personal medical guidance.
+            </p>
+            <p style="font-size: 0.75rem; color: var(--text-light);">
+                <strong>Affiliate Disclosure:</strong> GetPrescribed.com is a participant in affiliate programs. We may receive commissions for purchases made through our links at no extra cost to you.
+            </p>
+        </div>
+    </footer>
     </main>
 </body>
 </html>
